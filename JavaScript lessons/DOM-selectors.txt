@@ -1,0 +1,30 @@
+DOM Selectors
+--------------
+getElementsByTagName -> document.getElementsByTagName("h1");
+getElementsByClassName -> document.getElementsByClassName("second")
+getElementById -> document.getElementById("first")
+
+querySelector -> document.querySelector("li")
+querySelectorAll -> document.querySelectorAll("li")
+
+getAttribute --> document.querySelector("li").getAttribute("random")
+setAttribute --> document.querySelector("li").setAttribute("random", 1000)
+
+##Changing Styles
+style.{property} //ok
+Eg:  document.querySelector("h1").style.background = "yellow"
+
+className //best
+classList //best
+
+classList.add
+classList.remove
+classList.toggle
+
+##Bonus
+innerHTML //DANGEROUS
+
+parentElement --> document.querySelectorAll("li")[1].parentElement
+children --> document.querySelectorAll("li")[1].parentElement.children
+
+##It is important to CACHE selectors in variables

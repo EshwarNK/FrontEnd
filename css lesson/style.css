@@ -1,0 +1,39 @@
+body{
+	margin: 0px;
+}
+.container{
+	/*To activate flexbox*/
+	display: flex;
+	/*Below are the various properties */
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+h1{
+	font-family: fantasy;
+	font-size: 3em;
+	border-bottom: 2px solid pink;
+	border-right: 2px solid pink;
+	/*border-top: 2px solid pink;
+	border-left: 2px solid pink;*/
+	width: 400px;
+	text-align: center;
+	box-shadow: 4px 4px 5px #888888;
+	margin-top: 10px;
+	/*To override body margin*/
+
+}
+img{
+	width: 450px;
+	height: 300px;
+	margin: 10px;
+	/*For transition: I want the image to transition when an action is taken upon it. 
+	And I want all the properties to transform for 1s*/
+	transition: all 1s;
+}
+
+img:hover{
+	/*Whats the transition going to be? When I hover, I want the image to scale to 1.1 times*/
+	transform: scale(1.1);
+}

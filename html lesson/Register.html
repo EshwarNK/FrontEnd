@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+	<form method="GET">
+		<!-- By adding name in each of the imput tag, when you submit, it will be added to the URL 
+			This is one way of sending our data to the backend, this is called query strings 
+		 By default, the method="GET"
+		If you dont want it to come in the URL, you have to use POST, the values would be passed as a part of the body and not as a part of the request, so it will be secured-->
+		<!-- Without the name tag below, the firstname does not become a part of the url -->
+		First Name: <input type="text"><br>
+		Last Name: <input type="text" name="lastname"><br>
+		Email: <input type="email" name="email" required><br>
+		Password: <input type="password" minlength="5" name="password"><br>
+		Birthday: <input type="date" name="birthday"><br>
+		Gender: <br>
+		<input type="radio" name="gender" value="Male"> Male<br>
+		<input type="radio" name="gender" value="Female"> Female<br>
+		<input type="radio" name="gender" value="Other"> Other<br>
+		<!-- With the value in gender, the selection will become a part of the URL -->
+		Pets: <br>
+		<input type="checkbox" name="cat"> Cat <br>
+		<input type="checkbox" name="dog"> Dog <br>
+		<!-- <select multiple> -->
+		<select name="Cars">	
+			<option value="volvo" name="volvo">Volvo</option>
+			<option value="audi" name="audi">Audi</option>
+			<!-- With name="Cars", the selection will become a part of the URL -->
+		</select><br>
+		<input type="submit" value="Register!">
+		<input type="reset">
+	</form>
+
+</body>
+</html>
+
+<!-- 
+?
+firstname=dslfj
+&lastname=fjalsdj
+&email=ldfsajl%40gmail.com
+&password=12345566
+&date=2020-04-01
+&gender=on
+&cat=on
+&dog=on -->
+
+<!-- 
+?firstname=dsfhj
+&lastname=djlsfj
+&email=fsljdl%40gmail.com
+&password=djsljljf
+&birthday=2020-04-01
+&gender=Male
+&cat=on
+&Cars=audi -->

@@ -1,0 +1,51 @@
+/*Selector {
+	Property: value;
+}*/
+/* The reason why we call CSS as cascading style sheet is bcoz it will take the last input that it receives for a specific selector
+*/
+/*Go to https://css-tricks.com/almanac/ for any information on css
+ Get the colors from https://paletton.com/*/
+*{
+	text-align: right;
+}
+/*The above is applicable for all text in the web page*/
+body {
+	background-image: url(JDV_2547.JPG); 
+	background-size: cover;
+}
+/*h2, p All Ps and h2
+h2 space p, all ps inside h2
+h2>p, all p that have parent of h2
+h2+p, all p elements exactly after h2*/
+/*h2, p:hover {*/
+h2, p {
+	color: red;
+	text-align: center;
+	border: 5px solid rgb(128, 109, 21);
+	/*border: 5px solid rgba(128, 109, 21, 0); 0-transparent, 1-full dark*/
+	cursor: pointer; 
+}
+p {
+	color: green ;
+}
+p {
+	color: #532B72;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+.webtext{
+	border: 3px dashed green;
+}
+.active {
+	color: red;
+}
+
+#div1 {
+	background: rgba(0,0,255, 0.2);
+}
+#div2 {
+	background: rgba(125, 125, 233, 0.5);
+}

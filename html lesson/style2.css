@@ -1,0 +1,14 @@
+h2 {
+	color: green;
+}
+.boxmodel{
+	border: 5px solid red;
+	display: inline-block;
+	padding: 5px 20px 5px 20px; 
+	/*Top, right, bottom, left*/
+	margin: 0px 20px; 
+	/*Top+botton left+right*/
+	/*outside of the border */
+	width: 33px;
+	height: 54px;  
+}
